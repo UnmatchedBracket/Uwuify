@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"group": "io.github.unmatchedbracket",
+	"id": "uwuify",
+	"version": "${version}",
+	"name": "Uwuifier",
+	"description": "Make evewything uwu~",
+	"authors": [
+		"UnmatchedBracket"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/uwu/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.unmatchedbracket.uwu.Uwu"
+		],
+		"client": [
+			"io.github.unmatchedbracket.uwu.UwuClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "uwu.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
