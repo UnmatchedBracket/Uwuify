@@ -21,7 +21,6 @@ public class EntityRendererMixin {
     )
     // inject *after* the deadmau5 check
     private void renderLabelIfPresent(CallbackInfo ci, @Local LocalRef<Text> lr) {
-        System.out.println("injecty nametag");
         lr.set(Uwuifier.uwuify(lr.get()));
     }
 }
